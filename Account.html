@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Satya</title>
+    <link rel="stylesheet" type="text/css" href="Stylesheets/Account.css" />
+    <link rel="icon" type="image/x-icon" href="Resources/Images/ico/ico.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <div class ="header">
+        <!-- navbar -->
+        <div class="navbar">
+            <div class="logo">
+                BloodDonation
+                <img src="Resources/Images/ico/logo.png" height="30px">
+            </div>
+            <div class="menus">
+                <ul>
+                    <li><h3>Hello, Satya</h3></li>
+                    <li><h3>|</h3></li>
+                    <li><a href="Index.html">log out</a></li>
+                </ul>
+            </div>
+        </div> 
+
+        <!-- content one -->
+        <div class="contentOne">
+            <div class="leftbox"> <h1>Hey Satya, Welcome to <br> your account.</h1><br>
+            <br> 
+            <h2>Satya, want to donate blood ?. </h2>
+            <p>Fill out the form properly and we will noytify you as soon as we find donee.</p><br>
+            <a href="#section2">Click here </a>
+            </div>
+            <div class="rightbox"> 
+                <div class="contactus">
+                    <h1>Find a donor </h1> 
+                    <form action="/popUpdonee.html">  
+                            <label>Full Name : </label>   
+                            <input type="text" placeholder="Enter Full Name" name="name" required>     
+                            <label>State : </label>   
+                                <select id="state" required >
+                                    <option value="">Select State :</option>
+                                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                    <option value="Assam">Assam</option>
+                                    <option value="Bihar">Bihar</option>
+                                    <option value="Chandigarh">Chandigarh</option>
+                                    <option value="Chhattisgarh">Chhattisgarh</option>
+                                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                    <option value="Daman and Diu">Daman and Diu</option>
+                                    <option value="Delhi">Delhi</option>
+                                    <option value="Lakshadweep">Lakshadweep</option>
+                                    <option value="Puducherry">Puducherry</option>
+                                    <option value="Goa">Goa</option>
+                                    <option value="Gujarat">Gujarat</option>
+                                    <option value="Haryana">Haryana</option>
+                                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                    <option value="Jharkhand">Jharkhand</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                    <option value="Kerala">Kerala</option>
+                                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                    <option value="Maharashtra">Maharashtra</option>
+                                    <option value="Manipur">Manipur</option>
+                                    <option value="Meghalaya">Meghalaya</option>
+                                    <option value="Mizoram">Mizoram</option>
+                                    <option value="Nagaland">Nagaland</option>
+                                    <option value="Odisha">Odisha</option>
+                                    <option value="Punjab">Punjab</option>
+                                    <option value="Rajasthan">Rajasthan</option>
+                                    <option value="Sikkim">Sikkim</option>
+                                    <option value="Tamil Nadu">Tamil Nadu</option>
+                                    <option value="Telangana">Telangana</option>
+                                    <option value="Tripura">Tripura</option>
+                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                    <option value="Uttarakhand">Uttarakhand</option>
+                                    <option value="West Bengal">West Bengal</option>
+                                    </select>
+
+                            <label>City : </label>   
+                                <select id="city" required>
+                                  <option value="">Select City :</option>
+                                  <option value="1">Jalandhar</option>
+                                  <option value="2">Ludhiana</option>
+                                  <option value="3">Chandigarh</option>
+                                  <option value="4">Lucknow</option>
+                                  <option value="5">Patna</option>
+                                  <option value="6">Kolkata</option>
+                                  <option value="7">Patiala</option>
+                                  <option value="8">New Delhi</option>
+                                </select>
+
+                                <label>Blood Group Required : </label>   
+                                <select id="bloodgroup" required>
+                                  <option value="">Select Blood Group :</option>
+                                  <option value="1">A RhD positive (A+)</option>
+                                  <option value="2">A RhD negative (A-)</option>
+                                  <option value="3">B RhD positive (B+)</option>
+                                  <option value="4">B RhD negative (B-)</option>
+                                  <option value="5">O RhD positive (O+)</option>
+                                  <option value="6">O RhD negative (O-)</option>
+                                  <option value="7">AB RhD positive (AB+)</option>
+                                  <option value="8">AB RhD negative (AB-)</option>
+                                </select>    
+                            <button type="submit">Search</button>                
+                    </form>
+                   </div>
+                </div>
+        </div>
+        </div>
+        <!-- content two -->
+        <div class="contentTwo" id="section2">
+            <h1>Blood Donation Form </h1><br>
+            <div class="row">
+                <div class="steps">
+                    <form action="/popUpdoner.html">
+                                <label>Full name : </label><br>
+                                <input type="text" placeholder="Enter first name" name="name" required>  <input type="text" placeholder="Enter last name" name="name" required ><br>
+                                <label>Email id :</label>
+                                <input type="email" placeholder="Enter your phone number" name="email" required ><br>
+                                <label>Your blood group : </label>   
+                                <select required>
+                                  <option value="">Select Blood Group :</option>
+                                  <option value="1">A RhD positive (A+)</option>
+                                  <option value="2">A RhD negative (A-)</option>
+                                  <option value="3">B RhD positive (B+)</option>
+                                  <option value="4">B RhD negative (B-)</option>
+                                  <option value="5">O RhD positive (O+)</option>
+                                  <option value="6">O RhD negative (O-)</option>
+                                  <option value="7">AB RhD positive (AB+)</option>
+                                  <option value="8">AB RhD negative (AB-)</option>
+                                </select>
+                                <label>Birth date : </label>
+                                <input type="date" id="birthday" name="birthday" required >
+                                <p id="passmessage">You can't vote as minimum age required is 18 years.</p>
+
+                                <label>Gender : </label><br>
+                                <input type="radio" name="gender" value="male" required> Male
+                                &nbsp
+                                <input type="radio" name="gender" value="female" required> Female<br>
+                                <label>Phone no :</label>
+                                <input type="tel" placeholder="Enter your phone number" id="phone" name="phone" required>
+                                <label>Address :</label>
+                                <input type="address" placeholder="Enter your address" name="address" required><br>
+                                <button type="submit">Submit</button> 
+                    </form>
+                </div>
+                                
+                </div>
+        </div>
+        
+            <!-- footer -->         
+        <div class="footer">
+            <div class="icons">
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+            <h2>Made with love &#10084 in India</h2>  
+            </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Script for div movement -->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<!-- Script for year calculating -->
+<script>
+
+    var msg = document.getElementById("passmessage");
+    document.querySelector("#birthday").addEventListener("input",()=>{
+                var bdt = document.getElementById('birthday').value;
+                var date = new Date(bdt);
+                var age = 2022 - date.getFullYear();
+                if(age<18){
+                    msg.style.display="block";
+                    console.log(date.getFullYear())
+                }
+                else{
+                    msg.style.display="none";
+                }
+    })
+
+</script> 
+</html>

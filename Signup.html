@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp - Blood Donation</title>
+    <link rel="stylesheet" type="text/css" href="Stylesheets/LoginSignup.css" />
+    <link rel="stylesheet" type="text/css" href="Stylesheets/Style.css" />
+    <link rel="icon" type="image/x-icon" href="Resources/Images/ico/ico.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+  
+    <!-- head & navbar -->
+    <div class="header">
+    <div class="main">
+        <div class="navbar">
+            
+            <div class="logo">
+                BloodDonation
+                <img src="Resources/Images/ico/logo.png" height="30px">
+            </div>
+            
+            <div class="menus">
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                </ul>
+            </div>
+        </div>
+
+        
+        
+
+    <!-- main content -->     
+    <div class="Form">
+       <div class="signup">
+        <h1>already <br> registered ?</h1>
+        <h3>Click on the login button <br>and log into your account.</h3>
+        <a href="Login.html" class="buttonSignUp">Login</a>
+       </div>
+       <div class="login">
+        <h1>Sign Up</h1>
+        <form id="suform" action="/popUpSignUp.html">  
+            <div class="container">   
+                <label>Full Name : </label>   
+                <input type="text" placeholder="Enter Full Name" name="name" id="name" required>
+                <label>Email : </label>   
+                <input type="email" placeholder="Enter Email" name="email" id="email" required>  
+                <label>Password : </label>   
+                <input type="password" placeholder="Enter Password"  id="password" required>
+                <p id="passmessage">Password is <span id="strength"></span></p>
+                <button type="submit" id="submit" >Submit</button>
+            </div>   
+        </form>
+
+       </div>
+    </div>
+    
+    </div> a popup
+    </div>
+    
+    <!-- footer -->
+    <div class="footerlogsign">
+        <div class="icons">
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            
+        </div>
+        <h2>Made with love &#10084 in India</h2>
+    </div>
+
+<!-- password strength script -->
+<script>
+    var pass = document.getElementById("password");
+    var msg = document.getElementById("passmessage");
+    var stre = document.getElementById("strength");
+    pass.addEventListener('input',()=>{
+        if(pass.value.length > 0){
+            msg.style.display="block";
+        }
+        else{
+            msg.style.display="none";
+        }
+        if(pass.value.length < 4){
+            stre.innerHTML="weak";
+            msg.style.color="red";
+        }
+        else if(pass.value.length >= 4 && pass.value.length <8){
+            stre.innerHTML="medium";
+            msg.style.color="red";
+        }
+        else if(pass.value.length >= 8){
+            stre.innerHTML="strong";
+            msg.style.color="green";
+        }
+
+    })
+</script>      
+</body>
+</html>

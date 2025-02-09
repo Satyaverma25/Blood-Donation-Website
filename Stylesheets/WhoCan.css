@@ -1,0 +1,76 @@
+body{
+    display: inline;
+    width: 100%;
+}
+/* header */
+.headerwhocan{
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.5)),url("/Resources/Images/Background/whocan.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* main content */
+.Form{
+    padding-top: 30px;
+    margin: auto;
+    width: 80%;
+    min-height: 180vh;
+    margin-top: 20px;
+    display: flex;
+    vertical-align: middle;
+    justify-content: space-between;
+    text-align: center;
+}
+.whocandonate{
+  display: inline-block;
+  height: 440px;
+  text-align: left;
+  background-color: white;
+  color: black;
+  vertical-align: middle;
+}
+.whocandonate h1{
+    margin-top: 20px;
+    background-color: white;
+    width: 100%;
+}
+.whocandonate h2{
+    display:inline-block;
+    background-color: white;
+    width: 100%;
+    font-weight: 200;
+    font-size: 25px;
+}
+.whocandonate h3{
+    background-color: white;
+    width: 100%;
+    font-weight: 500;
+}
+.whocandonate p{
+    font-size: 18px;
+}
+
+/* footer */
+.footerwhocan{
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    align-content: center;   
+    background-color: #c3073F;
+    
+}
+.footerwhocan h2{
+
+    color: white;
+    font-weight: lighter;
+    padding: 10px;
+
+}
+.footerwhocan h3{
+    color: white;
+    font-weight: lighter;
+
+}

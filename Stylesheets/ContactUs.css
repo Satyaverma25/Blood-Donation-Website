@@ -1,0 +1,128 @@
+body{
+    display: inline;
+    width: 100%;
+}
+/* header */
+.headercontactus{
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.5)),url("/Resources/Images/Background/contactus.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* main content */
+.Form{
+    padding-top: 30px;
+    margin: auto;
+    width: 80%;
+    min-height: 80vh;
+    margin-top: 20px;
+    display: flex;
+    vertical-align: middle;
+    justify-content: space-between;
+    text-align: center;
+}
+.pointtocontact{
+  display: inline-block;
+  height: 440px;
+  width: 50%;
+  text-align: left;
+  background-color: white;
+  color: black;
+  vertical-align: middle;
+}
+.pointtocontact h1{
+    margin-top: 20px;
+    background-color: white;
+    width: 100%;
+}
+.pointtocontact h2{
+    display:inline-block;
+    background-color: white;
+    width: 100%;
+    font-weight: 200;
+}
+.pointtocontact h3{
+    background-color: white;
+    width: 100%;
+}
+.contactus{
+  display: inline-block;
+  height: 440px;
+  width: 50%;
+  text-align: left;
+  background-color: white;
+  color: black;
+  vertical-align: middle;
+}
+.contactus h1{
+    margin-top: 20px;
+    background-color: white;
+    width: 100%;
+}
+.contactus h2{
+    background-color: white;
+    width: 100%;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.contactus h3{
+    background-color: white;
+    width: 100%;
+}
+
+/* footer */
+.footercontactus{
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    align-content: center;   
+    background-color: #c3073F;
+    
+}
+.footercontactus h2{
+
+    color: white;
+    font-weight: lighter;
+    padding: 10px;
+
+}
+.footercontactus h3{
+    color: white;
+    font-weight: lighter;
+
+}
+
+/* button & textarea */
+button {   
+    background-color: black;  
+    width: 100%;  
+    color: white;   
+    padding: 15px;   
+    margin: 10px 0px;   
+    font-size: 20px;
+    border: none;   
+    cursor: pointer;   
+}   
+input[type=text], input[type=password], input[type=email]{   
+     width: 100%;   
+     margin: 8px 0;  
+     padding: 12px 10px;   
+     display: inline-block;
+     border-style: none;
+     background-color: rgb(243, 241, 241);     
+     box-sizing: border-box;   
+ } 
+ textarea{
+    width: 100%;   
+     margin: 8px 0;  
+     padding: 12px 10px;
+     background-color: rgb(243, 241, 241); 
+     height: 50px;   
+     border-style: none;
+     display: inline-block;   
+     box-sizing: border-box;
+     resize: none;   
+} 

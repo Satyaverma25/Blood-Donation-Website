@@ -1,0 +1,87 @@
+body{
+    display: inline;
+    width: 100%;
+}
+/* header */
+.headercontactus{
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.5)),url("/Resources/Images/Background/refer.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* form */
+.Form{
+    padding-top: 30px;
+    margin: auto;
+    width: 100%;
+    min-height: 80vh;
+    margin-top: 20px;
+    display: flex;
+    vertical-align: middle;
+    justify-content: space-between;
+    text-align: center;
+}
+.referfriend{
+    background-color: #c3073F;
+  height: 500px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 40%;
+  text-align: center;
+  color: rgb(37, 34, 34);
+}
+.referfriend h1{
+    font-size: 60px;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 3%;
+    width: 90%;
+    text-align: center;
+    font-weight: 400;
+}
+.referfriend h2{
+    margin-top: 0px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-weight: 500;
+}
+.invite{
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+.referphoto{
+  height: 440px;
+  width: 50%;
+  align-items: left;
+}
+
+/* footer */
+.footerlogsign{
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    align-content: center;   
+    background-color: #c3073F;
+    
+}
+.footerlogsign h2{
+
+    color: white;
+    font-weight: lighter;
+    padding: 10px;
+
+}
+.footerlogsign h3{
+    color: white;
+    font-weight: lighter;
+
+}
